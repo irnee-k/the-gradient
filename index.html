@@ -4,38 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Gradient</title>
-  <link href="https://fonts.googleapis.com/css2?family=Arya&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arya&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --bg-color: #F8F5F2;
+      --text-color: #294E60;
+      --card-bg: #ffffff;
+      --highlight-bg: #e9e4df;
+      --accent: #294E60;
+    }
+
     body {
       font-family: 'Arya', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #F8F5F2;
-      color: #294E60;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
     }
 
     header {
-      background-color: #fde6e0;
-      padding: 60px 20px;
+      background-color: var(--highlight-bg);
+      padding: 60px 20px 40px;
       text-align: center;
+      border-radius: 16px;
     }
 
     header h1 {
-      font-size: 2.5em;
+      font-size: 2.8em;
       margin: 0;
     }
 
-    .tagline {
+    .tagline, .launch {
       text-align: center;
       font-size: 1.2em;
-      margin: 40px 20px 20px;
-    }
-
-    .launch {
-      text-align: center;
-      font-size: 1.1em;
-      margin-bottom: 40px;
-      color: #294E60;
+      margin: 24px 0;
+      line-height: 1.6;
     }
 
     .columns {
@@ -43,77 +52,94 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 30px;
-      padding: 0 20px 40px;
+      margin-top: 40px;
     }
 
     .column {
       flex: 1 1 250px;
-      max-width: 300px;
-      background-color: #fafafa;
-      border-radius: 8px;
-      padding: 20px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      max-width: 280px;
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       text-align: center;
     }
 
     .column h3 {
-      margin-bottom: 10px;
+      margin-bottom: 12px;
+      font-size: 1.25em;
     }
 
     footer {
       text-align: center;
       padding: 40px 20px;
-      font-size: 0.95em;
-      background-color: #f2f2f2;
+      font-size: 1em;
     }
 
     footer a {
       display: block;
-      margin: 5px 0;
-      color: #294E60;
+      margin: 10px 0;
+      color: var(--accent);
       text-decoration: none;
+      font-weight: bold;
     }
 
     footer a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .tagline, .launch {
+        font-size: 1em;
+      }
+
+      .column {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>The Gradient</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Welcome to The Gradient</h1>
+    </header>
 
-  <div class="tagline">
-    a community for womxn in AI. <br />
-    Whether you're just curious about AI or have been tinkering for a while, this is a space for you!
-  </div>
-
-  <div class="launch">
-    🌞 Launch – late summer 2025
-  </div>
-
-  <div class="columns">
-    <div class="column">
-      <h3>Pockets of Society</h3>
-      <p>Exploring where AI intersects with the world we live in — from policy to pop culture.</p>
+    <div class="tagline">
+      a community for womxn in AI.<br />
+      Whether you're just curious about AI or have been tinkering for a while, this is a space for you!
     </div>
-    <div class="column">
-      <h3>AI Primer</h3>
-      <p>Intro-friendly resources to help you build intuition around AI concepts and tools.</p>
-    </div>
-    <div class="column">
-      <h3>Tools to Tinker</h3>
-      <p>Curated tools and projects to help you get hands-on with AI in playful and practical ways.</p>
-    </div>
-  </div>
 
-  <footer>
-    <a href="https://bit.ly/gradient-waitlist" target="_blank">✨ Join the waitlist</a>
-    <a href="mailto:irenekoo97@gmail.com">📬 Reach out</a>
-    <a href="https://bit.ly/gradient-waitlist" target="_blank">🤝 Volunteer interest form</a>
-  </footer>
+    <div class="launch">
+      🌞 Launch – late summer 2025
+    </div>
+
+    <div class="columns">
+      <div class="column">
+        <h3>Pockets of Society</h3>
+        <p>Exploring how AI interacts with the world we live in — from policy to pop culture.</p>
+      </div>
+      <div class="column">
+        <h3>AI Primer</h3>
+        <p>Intro-friendly resources to help you build intuition around AI concepts and tools.</p>
+      </div>
+      <div class="column">
+        <h3>Tools to Tinker</h3>
+        <p>Curated tools and projects to help you get hands-on with AI in playful and practical ways.</p>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://bit.ly/gradient-waitlist" target="_blank">✨ Join the waitlist</a>
+      <a href="mailto:irenekoo97@gmail.com">📬 Reach out </a>
+      <a href="https://bit.ly/gradient-waitlist" target="_blank">🤝 Volunteer interest form</a>
+    </footer>
+  </div>
 
 </body>
 </html>
