@@ -16,79 +16,108 @@
         background-color: #f8f5f2;
         color: #294e60;
       }
+
       header {
         text-align: center;
-        padding: 60px 24px 20px;
+        padding: 60px 24px 30px;
+        background: linear-gradient(to bottom, #fde6e0 0%, #f8f5f2 100%);
       }
+
       h1 {
         font-size: 3em;
         margin-bottom: 0.2em;
       }
-      p.description {
+
+      p.description,
+      p.launch {
         font-size: 1.3em;
         max-width: 800px;
         margin: 0 auto;
       }
+
       p.launch {
-        font-size: 1.3em;
-        font-style: italic;
-        margin-top: 0.5em;
+        font-style: normal;
+        margin-top: 1em;
       }
+
       p.note {
         font-size: 0.95em;
         font-style: italic;
-        margin-top: 0.2em;
+        margin-top: 0.7em;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
       }
+
       p.note a {
         color: #294e60;
         text-decoration: underline;
       }
+
       main {
         max-width: 900px;
         margin: 0 auto;
-        padding: 20px 24px 60px;
+        padding: 30px 24px 60px;
       }
+
       details {
-        margin-bottom: 16px;
+        margin-bottom: 20px;
         background: #ffffff;
         border-radius: 10px;
-        padding: 12px 20px;
+        padding: 14px 20px;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
       }
+
       summary {
         font-size: 1.3em;
         font-weight: bold;
         cursor: pointer;
         list-style: none;
+        display: flex;
+        align-items: center;
       }
+
       summary::-webkit-details-marker {
         display: none;
       }
+
       summary::before {
         content: "▶";
-        font-size: 0.8em;
+        font-size: 0.75em;
         display: inline-block;
         margin-right: 8px;
         transform: rotate(0deg);
         transition: transform 0.3s ease;
       }
+
       details[open] summary::before {
         transform: rotate(90deg);
       }
+
       ul {
         padding-left: 20px;
+        margin-top: 10px;
       }
+
       li {
         margin-bottom: 8px;
       }
+
       a {
         color: #294e60;
         text-decoration: underline;
       }
+
       footer {
         text-align: center;
         padding: 40px 20px;
         font-size: 1.2em;
+        background-color: #f8f5f2;
+      }
+
+      footer a {
+        display: block;
+        margin: 8px 0;
       }
     </style>
   </head>
@@ -104,6 +133,7 @@
         <a href="https://tally.so/r/w50ojo" target="_blank">chip in!</a>
       </p>
     </header>
+
     <main>
       <details>
         <summary>Pockets of Society</summary>
@@ -130,13 +160,11 @@
         </ul>
       </details>
     </main>
+
     <footer>
-      <p>
-        <a href="https://tally.so/r/w50ojo" target="_blank">🤝 Want to contribute?</a>
-      </p>
-      <p>
-        <a href="https://bit.ly/gradient-waitlist" target="_blank">✨ Join the waitlist</a>
-      </p>
+      <a href="https://bit.ly/gradient-waitlist" target="_blank">✨ Join the waitlist! </a>
+      <a href="mailto:irenekoo97@gmail.com">📬 Reach out </a>
+      <a href="https://tally.so/r/w50ojo" target="_blank">🤝 Want to contribute? </a>
     </footer>
   </body>
 </html>
